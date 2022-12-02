@@ -1,4 +1,4 @@
-from src import calculator as calc
+import calculator
 
 ### Menu 
 
@@ -28,19 +28,19 @@ def repeat_menu ():
 ### Calculator functions menu 
 
 def first_menu():
-    calc.add_()
+    calculator.add()
     exit_menu()
     
 def second_menu():
-    calc.subtract_()
+    calculator.subtract()
     exit_menu()
 
 def third_menu():
-    calc.multiply_()
+    calculator.multiply()
     exit_menu()
 
 def fourth_menu():
-    calc.divide_()
+    calculator.divide()
     exit_menu()
 
 ### Start script func         
@@ -56,5 +56,3 @@ if __name__ == "__main__":
         third_menu()
     elif choose_menu == 4:
         fourth_menu() 
-
-
